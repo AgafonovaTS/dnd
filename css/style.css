@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    background-image: url("../Images/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Texturina', serif;
+}
+
+.token_rectangle { 
+    display: block;
+    width: 402px;
+    height: 450px;
+    border: 2px solid black;
+    border-radius: 15px; 
+    margin-right: 96px;
+}
+
+.container {
+    margin: 50px 50px;
+    display: flex;
+}
+
+
+
+
+.Characteristic{
+    font-family: 'Texturina';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px; 
+    width: 350px;
+    height: 60px;
+    margin-bottom: 18px;
+}
+
+.Input_text { 
+    font-family: 'Texturina';
+    font-size: 40px;
+    height: 60px;
+    width: 60px;
+    background: none;
+    size: 60px 60px;
+    text-align: center;
+}
+
+.game-inf {
+    display: flex;
+    text-align: center;
+}
+
+.Dice {
+    margin: 96px;
+    background-image: url(../images/dice.png);
+    background-size: auto;
+}
+
+.Initiative {
+    margin-left: 96px;
+}
+
+.Armor {
+    margin-left: 40px;
+}
+
+.Speed {
+    margin-left: 40px;
+}
+
