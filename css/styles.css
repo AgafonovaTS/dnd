@@ -4,13 +4,21 @@ body {
     background-color: #121C24;
 }
 
+.box{
+    display: flex;
+}
 
 /* Стиль шапки с серым фоном и отступами */
 .header {
     overflow: hidden;
     background-color: #121C24;
     padding: 20px 10px; 
-    
+    border-bottom: #E5E8EB 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 55% ;
 }
 
 /* Стиль ссылок шапки */
@@ -20,32 +28,23 @@ body {
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
 }
 
 /* Стиль ссылки логотипа */
 .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
-
-/* Изменение цвета фона при наведении курсора */
-.header a:hover {
-    background-color: #eaeaea;
-    color: black;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    color: #eaeaea;
 }
   
 /* Стиль активной/текущей ссылки */
 .header a.active {
     background-color: rgb(255, 169, 30);
     color: white;
-}
-  
-/* Сдвигаем секцию со ссылками вправо */
-.header-right {
-    float: right;
 }
   
 /* Медиа-запрос для адаптивности – когда ширина
@@ -62,3 +61,89 @@ body {
 }
   
 
+.left-container {
+    width: 307px;
+    height: 700px;
+    overflow: hidden;
+    padding-top: 20px;
+    margin-left: 62px;
+    color: #f7fafa;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.p {
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 150%;
+    color: #F7FAFA;
+    
+}
+
+
+.right-container {
+    width: 921px;
+    height: 700px;  
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    overflow: hidden;
+    padding-top: 20px;
+    
+}
+
+
+.input_name {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    width: 921px;
+    height: 72px;
+}
+
+.Name {
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 125%;
+    letter-spacing: -0.03em;
+    color: #f7fafa;
+    border: none;
+    background: none;
+    width: fit-content;
+}
+
+.Inspiration {
+    padding: 12px 16px;
+    width: 921px;
+    height: 112px;
+    justify-content: center;
+    font-family: "Noto Serif", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f7fafa;
+}
+
+.Tab {
+    color: #E5E8EB;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration: none;
+
+    border-radius: 8px;
+    padding: 8px 12px;
+    width: 275px;
+    height: 37px;
+    
+}
