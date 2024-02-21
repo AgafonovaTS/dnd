@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: auto !important;
     background-image: url("../Images/Background.png");
     background-size: cover;
     background-position: center;
@@ -7,8 +7,49 @@ body {
     font-family: 'Texturina', serif;
 }
 
+.container {
+    margin: 50px 50px;
+    display: flex;
+}
+
+.Characteristic{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.Input_text {  
+    position: relative;
+    background: none;
+    width: 350px !important;
+    height: 44px;
+    font-family: 'Texturina';
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px; 
+}
+
+#Characteristic_text::placeholder {
+    color: #000;
+    opacity: 0.7;
+ }
+
+.Input_level {
+    background: none;
+    position: absolute;
+    width: 42px;
+    height: 44px;
+    font-family: 'Texturina';
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px; 
+}
+
 .token_rectangle { 
-    display: block;
+    display: flexbox;
     width: 402px;
     height: 450px;
     border: 2px solid black;
@@ -16,56 +57,123 @@ body {
     margin-right: 96px;
 }
 
-.container {
-    margin: 50px 50px;
+.base_char {
+    display: inline-block;
+    margin: 0px 0px 0px 96px;
+}
+
+.Input_ini {
+    background: url('/Images/Dice.png') no-repeat center;
+    height: 120px;
+    width: 105px;
+    text-align: center;
+    font-family: 'Texturina';
+    font-size: 40px;
+    border: none;
+}
+
+.Input_AC {
+    background: url('/Images/armor.png') no-repeat center;
+    margin: 40px;
+    height: 120px;
+    width: 105px;
+    text-align: center;
+    font-family: 'Texturina';
+    font-size: 40px;
+    border: none;
+}
+
+.Input_Speed {
+    background: url('/Images/Union.svg') no-repeat center;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-family: 'Texturina';
+    font-size: 40px;
+    border: none;
+}
+#Inspiration{
+    width: 100px;
+    height: 100px;
+    margin: 40px;
+    background: url('/Images/Union.svg') no-repeat center;
+    background-position: auto center;
+}
+
+.skills {
+    display: table;
+    height: 750px;
+    width: 402px;
+    background: url('/Images/Skils_border.svg');
+}
+
+.content {
     display: flex;
 }
 
 
 
 
-.Characteristic{
-    font-family: 'Texturina';
-    font-weight: 400;
-    font-size: 40px;
-    text-align: center;
-    border: 2px solid black;
-    border-radius: 15px; 
-    width: 350px;
-    height: 60px;
-    margin-bottom: 18px;
-}
+/*
+<body>
+    <div>
+        <div class="container">
+            <div class="token_rectangle">
+                <!-- Импорт токена персонажа -->
+            </div>
+            <div id="Characteristic">
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Name">
+                </div>
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Class&level">
+                    <input type="text" class="Input_level">
+                </div>
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Race">
+                </div>
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Subrace">
+                </div>
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Background">
+                </div>
+                <div class="Characteristic">
+                    <input type="text" class="Input_text" id="Characteristic_text" placeholder="Alignment">
+                </div>
+            </div>
 
-.Input_text { 
-    font-family: 'Texturina';
-    font-size: 40px;
-    height: 60px;
-    width: 60px;
-    background: none;
-    size: 60px 60px;
-    text-align: center;
-}
+            <div class="base_char">
+                <input type="text" class="Input_ini" id="Characteristic_text"> 
+                <!-- Сюда должен поттягиваться модификатор ловкости -->
+                <input type="text" class="Input_AC" id="Characteristic_text">
+                <!-- Формула КД 10 + модификатор ловкости -->
+                <input type="text" class="Input_Speed" id="Characteristic_text">
+                <button id="Inspiration">
+                    <!-- Нужно сделать так, чтобы при нажатии на кнопку union.svg менялось на ins_Dragon.svg + 
+                        поправить размещение -->
+                </button>    
+            </div>
+        
+        </div>
+    
+        <div class="container">
+            <div class="skills"></div>
+                <table>
+                    <tr>
+                        <th>
+                            
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </table>
 
-.game-inf {
-    display: flex;
-    text-align: center;
-}
+            </div>
+        </div>
+    </div>
 
-.Dice {
-    margin: 96px;
-    background-image: url(../images/dice.png);
-    background-size: auto;
-}
 
-.Initiative {
-    margin-left: 96px;
-}
-
-.Armor {
-    margin-left: 40px;
-}
-
-.Speed {
-    margin-left: 40px;
-}
-
+    <script src="/js/script.js"></script>
+</body>
+*/
